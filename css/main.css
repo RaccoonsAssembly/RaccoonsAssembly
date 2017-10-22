@@ -75,7 +75,7 @@ header {
 }
 
 .my-header__img {
-  background-image: url(../img/head_bg.bmp);
+  background-image: url(../img/head_bg.png);
   background-size: cover;
   background-position: center top;
   height: 82vh;
