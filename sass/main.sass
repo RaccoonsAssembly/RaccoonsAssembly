@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700')
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,800');
+// font-family: 'Raleway', sans-serif;
+//font-family: 'Montserrat', sans-serif;
+
+$font: 'Raleway', sans-serif
+=bg_img($i)
+    background-size: cover
+    background-position: center top
+$i: !important
+    
+*
+    margin: 0
+    padding: 0
+
+.clearfix:after
+    content: ''
+    display: table
+    width: 100%
+    clear: both
+body
+    min-width: 320px
+    line-height: 1.75
+.my-page
+    background-color: #faf9fa
+header
+    height: 18vh
+    min-height: 100px
+    width: 90vw
+    margin: auto
+    max-width: 1199px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    position: relative
+.logo
+    float: left
+    margin-left: 20px
+    img
+        width: 80px
+        height: auto
+.hamburger
+    top: 6.5vh
+    right: 5vw
+    float: right
+    position: fixed 
+    z-index: 990
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+    border-radius: 10px $i
+    background-color: #f81365 $i
+    height: 7px $i
+    width: 50px $i
+    box-shadow: 3px 2px 3px #cebfca $i
+.hamburger-inner:before
+    top: -15px $i
+.hamburger-inner:after
+    bottom : -15px $i
+.my-header__img
+    background-image: url(../img/head_bg.bmp)
+    +bg_img(i)
+    height: 82vh
+    min-height: 600px
+    max-width: 1199px
+    width: 90vw
+    margin: auto
+    border-top-left-radius: 5px $i
+    border-top-right-radius: 5px $i
+    box-shadow: 0 0 20px #828282
+.my-header__img_txt
+    padding: 4% 15% 7% 7%
+    color: #fff
+    h1
+        font: 700 8rem 'Montserrat', sans-serif
+        letter-spacing: 5px
+        text-shadow: 4px 8px 6px rgba(0,0,0,0.7)
+    h3
+        font: 300 3rem 'Raleway', sans-serif
+        float: right
+.hamburger--spin.is-active .hamburger-inner:after
+    bottom: 0px $i
+.mm-menu
+    background-color: #faf9fa $i
+.mm-panels>.mm-panel.mm-hasnavbar
+    padding-top: 20px $i
+.mm-panels>.mm-panel:after, .mm-panels>.mm-panel:before
+    display: none $i
+.mm-panels>.mm-panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
+    margin-top: 20px $i
+.mm-listview>li:not(.mm-divider):after
+    display: none $i
+.mm-navbar
+    border: none $i
+    height: auto !important
+    position: relative $i
+    .mm-title img
+        width: 60px
+        height: auto
+.mm-title
+    padding: 0 !important
+.mm-listview
+    text-transform: uppercase
+    color: #303335
+    font: 400 2.5rem 'Montserrat', sans-serif $i
+.mm-listview>li:not(.mm-divider):after
+    left: 5px $i
+.mm-listview>li:hover
+    background-color: #e3dde3 $i
+    transition: 0.4s ease $i
+.mm-selected
+    background-color: #cb99cb $i
+.mm-selected:hover
+    background-color: #cb99cb $i
+h1
+    text-transform: uppercase
+    line-height: 1.4
+    font: 400 1rem $font
+.fa
+    font-size: 6rem $i
+    color: #f81365 $i
+    text-shadow: 3px 3px 5px #a90260 $i
+.services
+    width: 90vw
+    margin: auto
+    max-width: 1199px
+h2
+    text-align: center
+    margin: 100px 0 $i
+    span
+        padding: 10px 35px
+        font: 600 5.5rem 'Montserrat', sans-serif $i
+        background: #f81365
+        color: #fff $i
+        border-radius: 2px
+        box-shadow: 10px 10px 20px rgba(82,82,82,0.5)
+        text-shadow: 3px 3px 3px #a90260
+.services__content
+    display: flex
+    justify-content: space-between
+.services__content_img
+    background: url(../img/services.jpg) 
+    +bg_img(i)
+    width: 40%
+    max-width: 700px
+    height: 80vh
+    max-height: 1300px
+    box-shadow: 0 0 20px #828282
+    min-height: 800px
+.services__content_txt
+    width: 55%
+    max-width: 700px
+    height: 80vh
+    max-height: 1300px
+    margin-left: 5%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    min-height: 800px
+    div
+        p
+            width: 50%    
+            font: 400 1.5rem 'Montserrat', sans-serif 
+            float: right
+            line-height: 1.7
+            letter-spacing: 1px
+            text-shadow: 1px 1px 0px #d5bdd4
+        span
+            font: 800 3rem 'Montserrat', sans-serif 
+            text-transform: uppercase
+            letter-spacing: 1px
+            padding: 10px 20px
+            margin-left: 10px
+            transition: .4s ease
+            float: left
+            cursor: pointer
+            text-rendering: optimizeLegibility
+            text-shadow: 2px 2px 5px #d5bdd4
+            &:hover
+                background: #f81365
+                color: #fff
+                border-radius: 2px
+                box-shadow: 10px 10px 20px rgba(82,82,82,0.5)
+                text-shadow: 3px 3px 3px #a90260
+
+#b1h, #b2h,#b3h,#b4h
+    transition: .4s
+.none
+    opacity: 0
+.owl-carousel
+    max-width: 1299px
+    margin: 0 auto
+.slide
+    letter-spacing: 1px
+    border-radius: 2px
+    opacity: 0.4
+    background: #d8bfd1
+    margin-top: 50px
+    .slide-wrap
+        padding: 40px 50px
+        .person__name
+            float: left
+            font: 400 3rem 'Montserrat', sans-serif
+            p
+                margin-top: 15px
+            .person__name_desc
+                font: 300 1.1rem 'Montserrat', sans-serif
+        .person__photo
+            border-radius: 2px
+            float: right
+            +bg_img(i)
+            width: 130px
+            height: 130px
+            margin-right: -80px
+        .person__txt
+            float: left
+            font: 300 1.3rem 'Montserrat', sans-serif
+            line-height: 30px
+            margin-top: 25px
+#my-menu
+    .fa
+        color: red 
+        text-shadow: none $i
+.s1
+    .p1
+        background: url(../img/p1.jpg)
+.s2
+    .p2
+        background: url(../img/p2.jpg)
+.s3
+    .p3
+        background: url(../img/p3.jpg)
+.s4
+    .p4
+        background: url(../img/p4.jpg)
+.s5
+    .p5
+        background: url(../img/p5.jpg)
+.s6
+    .p6
+        background: url(../img/p6.jpg)
+
+.center
+    .fa
+         color: #fff $i
+    text-shadow: 3px 3px 3px #a90260
+    margin-top: -50px
+    color: #fff
+    .slide
+        box-shadow: 25px 25px 20px rgba(82,82,82,0.5) 
+        opacity: 1
+        background: #f81365 $i
+        .person__photo
+            box-shadow: 15px 15px 20px rgba(82,82,82,0.5)
+.addReview
+    text-align: center
+    margin: 70px auto
+    a
+        color: #a90260
+        font: 300 2.5rem 'Montserrat', sans-serif
+        border-bottom: 1px solid #a90260
+        &:hover
+            color: #a90260
+            text-decoration: none
+
+.reviews
+    position: relative
+.fa-chevron-left
+    position: absolute 
+    left: 10px
+    top: 70%
+    z-index: 2
+    margin-top: -15px
+    cursor: pointer
+.fa-chevron-right
+    position: absolute 
+    right: 10px 
+    top: 70%
+    z-index: 2
+    margin-top: -15px
+    cursor: pointer
+//.wedid
+//    padding-top: 200px
+.wedid__wrap
+    margin: 180px auto
+    display: flex
+    justify-content: space-around
+    max-width: 1199px
+    align-items: flex-start
+    align-content: flex-start
+    img
+        cursor: pointer
+        transition: .5s ease
+        box-shadow: 0 0 20px #828282
+        &:hover
+            transform: scale(1.7)
+        &:first-child
+            width: 105px
+            height: 320px
+        &:nth-child(2)
+            width: 118px
+            height: 426px
+        &:nth-child(3)
+            width: 120px
+            height: 500px
+        &:nth-child(4)
+            width: 145px
+            height: 320px
+        &:nth-child(5)
+            width: 127px
+            height: 320px
+.icons__wrap
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    max-width: 1199px
+    margin: 180px auto 30px auto
+    div
+        transition: 0.35s
+        margin: 0 10px
+        padding: 15px
+        border-radius: 2px
+        text-align: center
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 82px
+        .fa   
+            color: #303335 $i
+            text-shadow: 0 0 3px #828282 $i
+            font-size: 7rem $i
+            
+.icons__wrap
+    div:hover 
+        transform: scale(1.1)
+        color: #fff 
+        background: #f81365
+        text-shadow: 3px 3px 3px #a90260
+        box-shadow: 0 0 20px #828282
+.icons__wrap
+    div:hover .services__hr
+        border-color: #fff
+.icons__wrap
+    div:hover .fa
+        transition: 0.35s $i
+        margin-top: -50px
+        text-shadow: 3px 3px 3px #a90260 $i
+.icons__wrap
+    div:hover .services__hr
+        width: 250px
+.icons__wrap
+    div:hover .services__p
+        font: 400 1.4rem 'Montserrat', sans-serif
+        text-shadow: 3px 3px 3px #a90260
+        line-height: 21px
+.icons__wrap
+    div:hover .services__h
+        font: 600 2.2rem 'Montserrat', sans-serif
+        text-shadow: 3px 3px 3px #a90260
+        margin-bottom: 10px
+.services__h
+    font: 600 2rem 'Montserrat', sans-serif
+    margin-top: 30px
+    margin-bottom: 15px
+    text-shadow: 1px 1px 1px #ccc
+.services__p
+    font: 400 1.2rem 'Montserrat', sans-serif
+    margin-top: 0
+    margin-bottom: 25px
+    line-height: 1.5em
+    max-width: 270px
+    line-height: 21px
+    text-shadow: 1px 1px 1px #ccc
+    letter-spacing: 1px
+.services__hr
+    transition: 0.35s
+    width: 70px
+    border: 1.5px solid #ac6ca8
+    margin: 0
+footer
+    width: 80vw
+    max-width: 1000px
+    margin: 0 auto $i
+    background: #f81365
+    border-radius: 2px
+    color: #fff
+    text-align: center
+    p
+        font: 500 2rem 'Montserrat', sans-serif
+        letter-spacing: 1px
+        text-shadow: 3px 3px 3px #a90260
+        padding: 45px 0 30px 0
+        margin: 0
+    a
+        text-decoration: none
+        font: 800 5rem 'Montserrat', sans-serif
+        text-shadow: 3px 3px 3px #a90260
+        color: #fff
+        text-transform: uppercase 
+        border-bottom: 3px solid #fff
+        letter-spacing: 2px
+        &:hover
+            text-decoration: none
+            color: #fff
+        cursor: pointer
+    .fa
+        color: #fff $i
+        border: none
+        margin: 5px 15px 
+        font-size: 3rem $i
+        &:hover
+            transition: .5s ease
+            transform: rotate(360deg)
+.overflow
+    overflow: hidden
+.preloader
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: #fff
+    z-index: 999
+    transition: 1s all
+    opacity: 1
+    visibility: visible
+.done
+    opacity: 0
+    visibility: hidden
+.loader
+    width: 200px
+    height: 200px
+    background: url(../img/preload.jpg)
+    +bg_img(i)
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    animation: 1s spin infinite linear
+@keyframes spin
+    from
+        transform: translate(-50%,-50%) rotate(0deg)
+    to 
+        transform: translate(-50%,-50%) rotate(360deg) 
+    
+
+
+
+
+
+    
